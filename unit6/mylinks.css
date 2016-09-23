@@ -1,0 +1,32 @@
+/*The web page background color should be black, and the text color should be white.
+Display "My Favorite Links" at the top of the page in an h1 tag.
+Use an unordered list without any list markers to organize the hyperlinks.
+Unvisited hyperlinks should be red.
+Hyperlinks with the mouse pointer passing over should change to yellow text color with a 
+red background, and the link underline should disappear.
+Visited hyperlinks should be gray.*/
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a:visited { 
+    color: gray;
+}
+
+a { 
+    color: red;
+}
+
+a:hover { 
+    background-color: red;
+    color: yellow;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<form id="form1" method="post" onsubmit="return validateForm();" action="http://www.markmurtha.com/csis128/readform.asp">
+  Name: <input type="text" id="name" name="name"><br>
+  E-Mail Address: <input type="text" id="email" name="email"><br>
+  <input type="submit" value="Sign Up Now." id="submit1">
+</form>
+
+<script>
+    function validateForm() {
+        if (document.forms[0].name.value == "") {
+            alert("You must enter a name!");
+            return false;
+        }
+        else if (document.forms[0].email.value == "") {
+            alert("You must enter an email!");
+            return false;
+        }
+
+        var stremail = document.forms[0].email.value;
+        var hasat = stremail.indexOf('@');
+        var hasdot = stremail.indexOf('.');        
+        if (hasat == -1 || hasdot == -1 ) {
+            alert("Email is not valid!");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</body>
+</html>
+
+
+
+<!--
+The project requirements are as follows:
+
+x Add the necessary attributes to the form and input tags so they can be accessed by JavaScript.
+x Do not change the input type of the e-mail field.
+x Add a submit button that displays the text "Sign Up Now."
+xCheck the name and e-mail fields to be sure they are not blank when the form is submitted. Display a custom alert for each field if it is blank.
+xThe form should post to http://www.markmurtha.com/csis128/readform.asp, and use the post method.
+xCreate a web page named chapter14.html that contains your form, and upload it to your web hosting provider.
+xEnter the URL of the chapter14.html file in the submission area of this assignment in Blackboard. NOTE: DO NOT TYPE IN THE COMMENTS BOX.
+EXTRA CREDIT BONUS (20 points):
+xAdd JavaScript code that checks for a valid e-mail address in the e-mail address field
+-->
+

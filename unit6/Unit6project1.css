@@ -1,0 +1,40 @@
+/*idfloatleft (id selector with float to the left of the page, light-beige background, 
+Verdana or sans-serif large font, and 20 pixels of padding) */
+#idfloatleft {
+    background-color: #f5f5dc;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+}
+
+/*classheadlinedot (class selector with red headline with a blue dotted line underneath*/
+.classheadlinedot {
+    color: #ff0000;
+    text-decoration: underline dotted #0000ff;
+}
+
+/*idabsolutegray (id selector with absolute positioning 20 pixels from
+the top and 40 pixels from the right, a light-gray background, and a solid border) */
+#idabsolutegray {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background-color: #d3d3d3;
+    border-style: solid;
+}
+
+/*classrelativegreen (class selector with relative positioning, 15 pixels in from the left, 
+with a light-green background)*/
+.classrelativegreen {
+    position: relative;
+    left: 15px;
+    background-color: #90ee90;
+}
+
+/*idfixedgray (id selector with fixed positioning, light gray background color, 
+bold font weight, and 10 pixels of padding)*/
+#idfixedgray {
+    position: fixed;
+    background-color: #d3d3d3;
+    font-weight: bold;
+    padding: 10px;
+}

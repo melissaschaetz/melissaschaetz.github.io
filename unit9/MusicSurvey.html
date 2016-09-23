@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./MusicSurvey.css">
+</head>
+<body>
+    <form name="musicsurvey" method="post" id="musicsurvey" action="http://www.markmurtha.com/csis128/readform.asp">
+        <label>Name:</label> <input type="text" name="name" id="name"><br>
+        <label>E-mail:</label> <input type="text" name="email" id="email"><br>
+        <fieldset>
+            <legend>My Music Taste</legend>
+                <label>Select your favorite type of music:</label><br> 
+                <input type="checkbox" name="cbtypemusic" id="rock" value="rock">Rock<br>
+                <input type="checkbox" name="cbtypemusic" id="rb" value="rb">R&B<br>
+                <input type="checkbox" name="cbtypemusic" id="country" value="country">Country<br>
+        </fieldset>
+        <fieldset>
+            <legend>Music Purchase Pattern</legend>
+            <label>Select how often you purchase music:</label><br>
+            <input type="radio" name="rbhowoften" id="daily" value="daily">Daily<br>
+            <input type="radio" name="rbhowoften" id="weekly" value="weekly">Weekly<br>
+            <input type="radio" name="rbhowoften" id="monthly" value="monthly">Monthly<br>
+        </fieldset>
+        Location where you listen to music:<br>
+        <select size="3" name="sbplaces" id="sbplaces">
+            <option value="home">Home</option>
+            <option value="car">Car</option>
+            <option value="school">School</option>
+            <option value="library">Library</option>
+            <option value="work">Work</option>
+        </select><br>
+        What role does music play in your life?<br>
+        <textarea rows="3" cols="60" name="roletext" id="roletext"></textarea><br>
+        
+        <input type="submit" id="submit" value="Submit The Form">
+        <input type="reset" id="reset">
+    </form>
+    
+<br><br>
+ Melissa Schaetz
+<a href="mailto:s0828303@student.mcckc.edu>">s0828303@student.mcckc.edu</a>  
+</body>
+</html>
+
+
+
+<!--
+Name your file MusicSurvey.html.
+Set the action of your form to: http://www.markmurtha.com/csis128/readform.asp
+Required form elements:
+Text box for name
+E-mail address input form control for the e-mail address
+Check box group with at least three choices ("Select your favorite types of music")
+Radio button group with at least three choices ("Select how often you purchase music")
+Select box that initially shows three items but contains at least four items (locations where you listen to music)
+Scrolling textarea that is 60 characters wide and three rows high ("What role does music play in your life?")
+Submit button
+Reset button
+Fieldset and legend containing the radio buttons
+Fieldset and legend containing the checkboxes
+Use CSS to configure the display of the form
+Place your name and an e-mail link at the bottom of the page.
+Post the completed MusicSurvey.html file to your hosting provider, and test it to be sure each form control is sending data to the server. Submit the URL in the submission area of this assignment in Blackboard. NOTE: DO NOT TYPE IN THE COMMENTS BOX.
+
+Be sure to read the instructions carefully, include all the required elements and CSS, and test your form before submitting. 
+-->
